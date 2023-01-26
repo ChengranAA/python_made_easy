@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Manage Python the easy way</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MacOS version";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Manage Python the easy way
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">MacOS version</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#background">Background</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-python-not-the-snake">What is Python? (not the snake)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#example-on-python-interpreter">Example on Python interpreter</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#example-on-c-compiler">Example on C compiler</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-fun-staff">The fun staff</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#understand-your-system">Understand your system</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#terminal-basics">Terminal basics</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#package-manager">Package manager</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-use-python-again-not-the-snake-that-would-be-weird">How to use python? (Again, not the snake, that would be weird)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#package-mangement">Package mangement</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ipython">Ipython</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#virtual-environment">Virtual environment</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#end">End</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Manage Python the easy way</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>MacOS version</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="manage-python-the-easy-way-with-mac">Manage python the easy way (with Mac)</h1>
+<p>Author: Chengran Li</p>
+<h2 id="introduction">Introduction</h2>
+<p>It is very fun to use python language to implement various approaches to various needs. As scientific computing started to be used in various fields, python started to be used by more people. But often these users do not have a background in computer science and they get bogged down by the complicated environment setup. This article aims to help these people who are troubled by python environments by providing them with a simple manual.</p>
+<h2 id="background">Background</h2>
+<p>In this section, I'll introduce basic computer science concepts, but don't worry if you've never seen them before, you will be able to fully grasp the fundamentals after reading the following materials.</p>
+<h3 id="what-is-python-not-the-snake">What is Python? (not the snake)</h3>
+<p>Python is a high-level interpreted programming language. An interpreted language means that an interpreter will execute the language line by line like a translator. This has a different execution logic than C. A compiler converts C code into machine code (a code that a machine can understand) and then executes the compiled code. Both (or other types of languages) are essentially the same. The important logic is that the computer does not directly understand these high-level languages, and we need a translator (compiler or interpreter) that can make the machine execute our code. </p>
+<h4 id="example-on-python-interpreter">Example on Python interpreter</h4>
+<p>Many people choose python because it is very straightforward and simple. First we need some python code.</p>
+<pre><code class="language-python">#!/usr/bin/python3
+
+def main():
+  print(&quot;Python is awesome!&quot;)
+  return
+
+main()
+</code></pre>
+<p>This script is very simple, it's just print the string in the <code>print()</code> function. But you'll notice that at the very beginning of this file, there is some strange code. This thing is called a shebang (<code>#!</code>), and in the presence of a shebang in a file, the Unix/Unix-like operating system (like MacOs, Linux) program loader will analyze the contents after the shebang, use those contents as an interpreter directive, and call that directive with the path to the file containing the shebang as an argument to that interpreter.</p>
+<p>Here, I declared my python interpreter as <code>/usr/bin/python</code>, and my system will use this interpreter and execute my code below. </p>
+<p>To run the code I type the following code below in the terminal:</p>
+<pre><code class="language-bash">./my_scripy.py
+</code></pre>
+<p>You can also declare the python interpreter youself. Since <code>usr/bin/</code> is in my path. I can just do this. </p>
+<pre><code class="language-bash">python my_script.py
+</code></pre>
+<p>This time the shebang will be treated as a comment and will be ignored by the interpretor. Both time, if everything run successfully, we will get. If you want to declare the interpretor everytime, you don't have to write the shebang. </p>
+<pre><code>Python is awesome! 
+</code></pre>
+<h4 id="example-on-c-compiler">Example on C compiler</h4>
+<p>Compared to Python, C is much more complex, and although there are various IDEs that can simplify the process very well, I will explain it in the most basic way in order to give you a better understanding of the execution process, and rest assured that I will make sure my explanations are as simple as possible.</p>
+<p>First, I will need some simple C scripts as well. </p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main()
+{
+  printf(&quot;C is awesome too!&quot;);
+  return 0;
+}
+</code></pre>
+<p>You an see that the script is already much more complex than Python even though they basically achieve the same purpose.  </p>
+<p>As mentioned before I need a compiler to translate my code into machine code. I am using the <code>gcc</code> compiler here.</p>
+<pre><code class="language-bash">gcc my_script.c -o my_script
+</code></pre>
+<p>This line of command will tell <code>gcc</code> to compile my source file into an executable file. The executables of the c language are in general binary, and they are almost unreadable for humans. </p>
+<p>You got the excutables, you can finially run it now!</p>
+<pre><code class="language-bash">my_script
+</code></pre>
+<p>You will get, again, </p>
+<pre><code>C is awesome too!
+</code></pre>
+<p>In reality, the compilation process is far less straightforward than it seems, but this tutorial doesn't want to turn you into an expert on compilers, you just need to know the differences between C and Python. If you are interested, you can learn about computer systems and compilation principles, and you will even be able to write a programming language of your own.</p>
+<h2 id="the-fun-staff">The fun staff</h2>
+<p>After understanding python as a programming language, next we will learn how to manipulate your system to manage it.</p>
+<h3 id="understand-your-system">Understand your system</h3>
+<h4 id="terminal-basics">Terminal basics</h4>
+<p>In addition to its beautiful graphical interface, MacOS also provides a way to use the command line to operate the system. In this section, you will learn how to use simple commands to perform functions that can also be done in the GUI.</p>
+<p>Open the terminal application in your system, let's do it together. </p>
+<p>First, you have to know where you are. </p>
+<pre><code class="language-bash">pwd
+</code></pre>
+<p>The <code>pwd</code> is stand for print working directory. This command will print the current working directory in the terminal. You can check where you are whenever you like. The default working directory is your home directory. You can also use the following command to check your home directory. </p>
+<pre><code class="language-bash">echo $HOME
+</code></pre>
+<p>Next, we can check what are inside this current folder. </p>
+<pre><code class="language-bash">ls
+</code></pre>
+<p>You may wonder why you should abandon the simple GUI in favor of the more complex command line. The answer to this question is automation. With scripting, you can automate many functions, such as backing up data automatically and creating hundreds or even thousands of files automatically. </p>
+<p>Of course this is a more advanced topic, and if you are interested, you can learn shell programming in the future.</p>
+<h4 id="package-manager">Package manager</h4>
+<p>MacOS has a built-in App Store to install application ditributed by Apple. You also have the freedom to download and install anything from the Internet (well, they should be compatiable with MacOS). But now you have entered the command line world. Let's use a command line program called package manger to install applications!   </p>
+<p>Unfortunately, unlike Linux, MacOS doesn't come with a command line package manager. However, some awesome open source folks bring this experience to MacOS. The project is called Homebrew (https://brew.sh). On their website they have a one-line script solution to install the brew package manager. But if you didn't install the Apple command line tool, you have to do it first. </p>
+<p>You can either choose to install the Xcode or install the command-line-only one with the following command. </p>
+<pre><code class="language-bash">xcode-select --install
+</code></pre>
+<p>Click install and wait for the process. </p>
+<p>Next, you are ready to install brew. </p>
+<pre><code class="language-bash">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre>
+<p>Now you are ready to go. </p>
+<p>First, let's check if brew is in your path now. </p>
+<pre><code class="language-bash">which brew 
+</code></pre>
+<p>If everything works perfectly, you will probably see where your brew lives. </p>
+<p>Now we can install some applications. In brew terms, command line tools are called formulas. Let's install a system management tool called <code>htop</code>, this tool allows you to interactively monitor your system activities. it sounds cool, let's install it!</p>
+<pre><code class="language-bash">brew install htop
+</code></pre>
+<p>It's just that simple!</p>
+<p>To see what we installed we can use the list argument. </p>
+<pre><code class="language-bash">brew list
+</code></pre>
+<p>The brew package manager can not only install command line applicationsm but also it can install GUI-based applications. In brew term, GUI-based applications are called casks.  </p>
+<h3 id="how-to-use-python-again-not-the-snake-that-would-be-weird">How to use python? (Again, not the snake, that would be weird)</h3>
+<p>Many of my friends who are using python for the first time have this problem. They installed python from the official website, but when it comes to how to use and manage python, python just won't listen to them. That's why I wrote this tutorial in the first place. To teach you how to install, manage and use python in the easiest and most straightforward way. </p>
+<h4 id="installation">Installation</h4>
+<h4 id="package-mangement">Package mangement</h4>
+<h4 id="ipython">Ipython</h4>
+<h3 id="virtual-environment">Virtual environment</h3>
+<h2 id="end">End</h2>
+<p>I very much hope you will enjoy this simple instruction manual of mine. I want everyone to master this basic skill. Maybe my method isn't the best, and maybe you'll be able to find something more effective later, but isn't that what learning is all about? </p>
+<p>Happy coding!</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2023-01-26 21:12:44.868953+00:00
+-->
