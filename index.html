@@ -127,7 +127,7 @@ def main():
 
 main()
 </code></pre>
-<p>This script is very simple, it's just print the string in the <code>print()</code> function. But you'll notice that at the very beginning of this file, there is some strange code. This thing is called a shebang (<code>#!</code>), and in the presence of a shebang in a file, the Unix/Unix-like operating system (like MacOs, Linux) program loader will analyze the contents after the shebang, use those contents as an interpreter directive, and call that directive with the path to the file containing the shebang as an argument to that interpreter.</p>
+<p>This script is very simple, it just print the string within the <code>print()</code> function. But you'll notice that at the very beginning of this file, there are some strange codes. This thing is called a shebang (<code>#!</code>), and in the presence of a shebang in a file, the Unix/Unix-like operating system (like MacOs, Linux) program loader will analyze the contents after the shebang, use those contents as an interpreter directive, and call that directive with the path to the file containing the shebang as an argument to that interpreter.</p>
 <p>Here, I declared my python interpreter as <code>/usr/bin/python</code>, and my system will use this interpreter and execute my code below. </p>
 <p>To run the code I type the following code below in the terminal:</p>
 <pre><code class="language-bash">./my_scripy.py
@@ -148,8 +148,8 @@ int main()
   return 0;
 }
 </code></pre>
-<p>You an see that the script is already much more complex than Python even though they basically achieve the same purpose.  </p>
-<p>As mentioned before I need a compiler to translate my code into machine code. I am using the <code>gcc</code> compiler here.</p>
+<p>You an see that the script is pretty similar to Python and they basically achieve the same purpose.  However, the C programming language needs to take an extra step, which is compilation. </p>
+<p>A compiler is needed to translate my code into machine code. I am using the <code>gcc</code> compiler here which is available in most Unix/Unix-like operating system. </p>
 <pre><code class="language-bash">gcc my_script.c -o my_script
 </code></pre>
 <p>This line of command will tell <code>gcc</code> to compile my source file into an executable file. The executables of the c language are in general binary, and they are almost unreadable for humans. </p>
@@ -251,5 +251,5 @@ int main()
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-01-26 22:15:29.154824+00:00
+Build Date UTC : 2023-01-27 16:13:38.474979+00:00
 -->
