@@ -59,10 +59,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#the-fun-staff">The fun staff</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#understand-your-system">Understand your system</a>
+    <li class="toctree-l3"><a class="reference internal" href="#terminal-basics">Terminal basics</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#terminal-basics">Terminal basics</a>
-    </li>
     <li class="toctree-l4"><a class="reference internal" href="#package-manager">Package manager</a>
     </li>
         </ul>
@@ -110,7 +108,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="manage-python-the-easy-way-with-mac">Manage python the easy way (with Mac)</h1>
-<p>Author: Chengran Li</p>
+<p>This tutorial is distributed as open source. This means that anyone can contribute to this tutorial. The source code for this documentation is on github (https://github.com/ChengranAA/python_made_easy). If there are suggestions or comments, please file an issue. Any help would be useful.</p>
 <h2 id="introduction">Introduction</h2>
 <p>It is very fun to use python language to implement various approaches to various needs. As scientific computing started to be used in various fields, python started to be used by more people. But often these users do not have a background in computer science and they get bogged down by the complicated environment setup. This article aims to help these people who are troubled by python environments by providing them with a simple manual.</p>
 <h2 id="background">Background</h2>
@@ -162,8 +160,7 @@ int main()
 <p>In reality, the compilation process is far less straightforward than it seems, but this tutorial doesn't want to turn you into an expert on compilers, you just need to know the differences between C and Python. If you are interested, you can learn about computer systems and compilation principles, and you will even be able to write a programming language of your own.</p>
 <h2 id="the-fun-staff">The fun staff</h2>
 <p>After understanding python as a programming language, next we will learn how to manipulate your system to manage it.</p>
-<h3 id="understand-your-system">Understand your system</h3>
-<h4 id="terminal-basics">Terminal basics</h4>
+<h3 id="terminal-basics">Terminal basics</h3>
 <p>In addition to its beautiful graphical interface, MacOS also provides a way to use the command line to operate the system. In this section, you will learn how to use simple commands to perform functions that can also be done in the GUI.</p>
 <p>Open the terminal application in your system, let's do it together. </p>
 <p>First, you have to know where you are. </p>
@@ -199,10 +196,27 @@ int main()
 <p>To see what we installed we can use the list argument. </p>
 <pre><code class="language-bash">brew list
 </code></pre>
-<p>The brew package manager can not only install command line applicationsm but also it can install GUI-based applications. In brew term, GUI-based applications are called casks.  </p>
+<p>The brew package manager can not only install command line applicationsm but also it can install applications that are distributed as binary files. In brew term, these applications are called <code>casks</code>.  </p>
+<p>Let's install visual studio code using <code>brew</code>. </p>
+<p>First, I don't know the cask name for the visual studio code, so I have to search it first</p>
+<pre><code class="language-bash">brew search visualstudiocode
+</code></pre>
+<p>The brew gives me these results</p>
+<pre><code class="language-bash">==&gt; Casks
+visual-studio-code ✔
+</code></pre>
+<p>if your package is not listed in the results, try use another name or consult <code>brew</code>'s home page. </p>
+<p>Ok, now we know the cask name, we can install the program. </p>
+<pre><code class="language-bash">brew install --cask visual-studio-code
+</code></pre>
+<p>We now know how to install formulea and casks with brew, but how do we uninstall them, you probably can guess based on previous information. </p>
+<pre><code class="language-bash">brew uninstall htop
+</code></pre>
+<p>This will installed the <code>htop</code> program we just installed earlier. This section have covered the basics of how to use brew, more advanced techniques please consult the document of <code>brew</code>. </p>
 <h3 id="how-to-use-python-again-not-the-snake-that-would-be-weird">How to use python? (Again, not the snake, that would be weird)</h3>
 <p>Many of my friends who are using python for the first time have this problem. They installed python from the official website, but when it comes to how to use and manage python, python just won't listen to them. That's why I wrote this tutorial in the first place. To teach you how to install, manage and use python in the easiest and most straightforward way. </p>
 <h4 id="installation">Installation</h4>
+<p>MacOS do come with python pre-installed if you have followed the command line tool download in the previous section. </p>
 <h4 id="package-mangement">Package mangement</h4>
 <h4 id="ipython">Ipython</h4>
 <h3 id="virtual-environment">Virtual environment</h3>
@@ -251,5 +265,5 @@ int main()
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-01-27 16:13:38.474979+00:00
+Build Date UTC : 2023-02-03 13:25:09.022760+00:00
 -->
