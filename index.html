@@ -172,6 +172,24 @@ int main()
 <p>Next, we can check what are inside this current folder. </p>
 <pre><code class="language-bash">ls
 </code></pre>
+<p>The <code>ls</code> command lists the contents of the current directory. By default, it will list the files and directories in the current directory. You can add options to the <code>ls</code> command to modify its behavior. For example, the <code>-l</code> option will list the files and directories in long format, showing additional information about each file, such as permissions, owner, size, and modification time. The <code>-a</code> option will show all files, including hidden files. You can combine options, such as <code>-la</code>, to show all files in long format.</p>
+<pre><code class="language-bash">ls -la
+</code></pre>
+<p>To move to a different directory, you can use the <code>cd</code> command, followed by the path of the directory you want to move to. For example, to move to the Documents directory in your home directory, you can use the following command:</p>
+<pre><code class="language-bash">cd ~/Documents
+</code></pre>
+<p>The <code>~</code> character is a shortcut for your home directory. You can also use relative or absolute paths to specify a directory. For example, to move to the parent directory, you can use <code>cd ..</code>, and to move to the root directory, you can use <code>cd /</code>.</p>
+<p>To create a new directory, you can use the <code>mkdir</code> command, followed by the name of the directory you want to create. For example, to create a new directory named "mydir" in the current directory, you can use the following command:</p>
+<pre><code class="language-bash">mkdir mydir
+</code></pre>
+<p>To create a new file, you can use the <code>touch</code> command, followed by the name of the file you want to create. For example, to create a new file named "myfile.txt" in the current directory, you can use the following command:</p>
+<pre><code class="language-bash">touch myfile.txt
+</code></pre>
+<p>To edit a file, you can use a text editor such as nano, vim, or emacs. For example, to edit the file "myfile.txt" using nano, you can use the following command:</p>
+<pre><code class="language-bash">nano myfile.txt
+</code></pre>
+<p>Once you are done editing the file, you can save and exit by pressing <code>Ctrl+X</code>, followed by <code>Y</code> to confirm that you want to save the changes, and then <code>Enter</code> to exit.</p>
+<p>These are just a few basic commands to get you started with the terminal. There are many more commands and options available, so feel free to explore and experiment. You can also use the <code>man</code> command followed by the name of a command to view its manual page and learn more about its usage and options.</p>
 <p>You may wonder why you should abandon the simple GUI in favor of the more complex command line. The answer to this question is automation. With scripting, you can automate many functions, such as backing up data automatically and creating hundreds or even thousands of files automatically. </p>
 <p>Of course this is a more advanced topic, and if you are interested, you can learn shell programming in the future.</p>
 <h4 id="package-manager">Package manager</h4>
@@ -265,5 +283,5 @@ visual-studio-code ✔
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-02-03 13:25:09.022760+00:00
+Build Date UTC : 2023-03-27 17:06:47.425199+00:00
 -->
